@@ -1,6 +1,6 @@
-# 🎬 Projeto FMF vs ORIGINAL MELHORADO: Análise de Sentimentos IMDB
+# Projeto FMF vs ORIGINAL MELHORADO: Análise de Sentimentos IMDB
 
-## 📋 Visão Geral
+## Visão Geral
 
 Este projeto implementa uma análise completa de sentimentos em reviews de filmes do dataset IMDB, seguindo a estrutura metodológica **AGEMC** (Aplicação, Geração/Coleta, Exploração, Modelagem, Comunicação). 
 
@@ -8,42 +8,39 @@ O projeto foi desenvolvido em duas versões:
 - **Projeto FMF**: Implementação fiel ao artigo de referência
 - **Projeto ORIGINAL MELHORADO**: Versão com 8 originalidades inovadoras, incluindo validação estatística robusta
 
-### 🎯 Objetivo
+### Objetivo
 Identificar qual modelo de machine learning é mais eficaz para prever o sentimento (positivo ou negativo) de um review de filme, comparando abordagens tradicionais com inovações em modelagem e comunicação, com validação científica robusta.
-
-### 👨‍💻 Autor
-**Henrique** - Projeto PAD 2025 - Análise de Sentimentos IMDB
 
 ---
 
-## 📁 Estrutura do Projeto Organizada
+## Estrutura do Projeto Organizada
 
 ```
-tmp_Henrique/                    # Esta pasta no repositório compartilhado
-├── 📊 data/                          # Dados
+projeto PAD github/
+├── data/                          # Dados
 │   └── IMDB Dataset.csv              # Dataset principal (50.000 reviews)
-├── 🐍 src/                           # Código fonte
+├── src/                           # Código fonte
 │   ├── analise_sentimentos_imdb.py   # Fases A, G, E - Análise exploratória
 │   ├── estatisticas_detalhadas.py    # Análise complementar
 │   ├── modelagem_comunicacao_imdb.py # Projeto FMF - Fases M e C
 │   ├── projeto_original_imdb.py      # Projeto ORIGINAL MELHORADO - Fases M e C
 │   ├── comunicacao_avancada_imdb.py  # Comunicação avançada
 │   └── execucao_completa.py          # Script de execução completa
-├── 📋 docs/                          # Documentação
+├── docs/                          # Documentação
 │   ├── README.md                     # Documentação principal
 │   ├── roteiro_apresentacao.md       # Roteiro de apresentação
 │   └── relatorio_final_consolidado.md # Relatório final consolidado
-├── 📊 results/                       # Resultados
+├── results/                       # Resultados
 │   ├── resultados_modelagem.txt      # Resultados do Projeto FMF
 │   └── resultados_projeto_original.txt # Resultados do Projeto ORIGINAL
-├── 🖼️ visualizations/                # Visualizações
+├── visualizations/                # Visualizações
 │   ├── distribuicao_sentimentos.png  # Gráfico de distribuição
 │   ├── wordclouds_analise.png        # Word clouds
 │   ├── estatisticas_detalhadas.png   # Estatísticas detalhadas
 │   ├── matriz_confusao_avancada.png  # Matriz de confusão ORIGINAL MELHORADO
 │   ├── frequencia_palavras_por_classe.png # Importância das palavras
 │   └── analise_features_importancia.png # Análise de features
-├── 📚 notebooks/                     # Notebooks
+├── notebooks/                     # Notebooks
 │   └── Projeto_Pad_Original_vs_FMF.ipynb # Notebook principal
 ├── requirements.txt                  # Dependências do projeto
 └── .gitignore                        # Arquivos ignorados pelo Git
@@ -51,9 +48,9 @@ tmp_Henrique/                    # Esta pasta no repositório compartilhado
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
-### ⚠️ Importante: Dataset IMDB
+### Importante: Dataset IMDB
 
 O arquivo `data/IMDB Dataset.csv` (63MB) pode ser muito grande para o GitHub. Se você não conseguir fazer o download ou se o arquivo não estiver disponível:
 
@@ -69,17 +66,8 @@ Para testes rápidos, você pode usar apenas uma amostra do dataset:
 df = df.sample(n=5000, random_state=42)  # Usar apenas 5000 reviews
 ```
 
-### 🔧 Pré-requisitos
-- Python 3.7+
-- pip (gerenciador de pacotes Python)
-- Git (para clonar o repositório)
-
 ### 1. Instalação das Dependências
 ```bash
-# Navegue para a pasta do projeto
-cd tmp_Henrique
-
-# Instale as dependências
 pip install -r requirements.txt
 ```
 
@@ -116,116 +104,109 @@ python src/comunicacao_avancada_imdb.py
 - Abra o arquivo `notebooks/Projeto_Pad_Original_vs_FMF.ipynb`
 - Execute as células sequencialmente
 
-### 5. Google Colab (Alternativa)
-Se preferir usar o Google Colab:
-1. Faça upload do notebook para o Colab
-2. Faça upload do dataset para o Colab
-3. Execute as células sequencialmente
-
 ---
 
-## 🏆 Resultados Finais Melhorados
+## Resultados Finais Melhorados
 
-### 📊 Comparação de Modelos com Validação Estatística
+### Comparação de Modelos com Validação Estatística
 
 | Modelo | CV Acurácia | CV F1-Score | Teste Acurácia | Teste F1-Score | Significância |
 |--------|-------------|-------------|----------------|----------------|---------------|
-| **SVM (Otimizado)** | **83.45%** | **83.71%** | **83.48%** | **83.76%** | **✅ Significativo** |
-| Logistic Regression | 83.30% | 83.00% | 83.33% | 83.02% | ❌ Não significativo |
-| SVM | 82.70% | 83.15% | 82.73% | 83.19% | ✅ Significativo |
-| Naive Bayes | 81.80% | 80.93% | 81.82% | 80.95% | ❌ Não significativo |
-| Random Forest | 81.18% | 80.77% | 81.21% | 80.80% | ✅ Significativo |
-| Decision Tree | 70.25% | 69.80% | 70.30% | 69.85% | ❌ Não significativo |
+| **SVM (Otimizado)** | **83.45%** | **83.71%** | **83.48%** | **83.76%** | **Significativo** |
+| Logistic Regression | 83.30% | 83.00% | 83.33% | 83.02% | Não significativo |
+| SVM | 82.70% | 83.15% | 82.73% | 83.19% | Significativo |
+| Naive Bayes | 81.80% | 80.93% | 81.82% | 80.95% | Não significativo |
+| Random Forest | 81.18% | 80.77% | 81.21% | 80.80% | Significativo |
+| Decision Tree | 70.25% | 69.80% | 70.30% | 69.85% | Não significativo |
 
-### 🏆 Campeão Geral
+### Campeão Geral
 **SVM Otimizado** com 83.48% de acurácia e 83.76% de F1-Score, com validação estatística confirmando significância (p < 0.05)
 
 ---
 
-## 🔬 Originalidades Implementadas (8 total)
+## Originalidades Implementadas (8 total)
 
 ### **Projeto ORIGINAL MELHORADO - Fase M (Modelagem)**
 
 #### 1. Pipeline Avançado de Pré-processamento
-- ✅ Conversão para minúsculas
-- ✅ Remoção de números e pontuação
-- ✅ Remoção de stopwords
-- ✅ Remoção de palavras < 3 letras
-- ✅ **Lemmatização** (diferencial)
+- Conversão para minúsculas
+- Remoção de números e pontuação
+- Remoção de stopwords
+- Remoção de palavras < 3 letras
+- **Lemmatização** (diferencial)
 
 #### 2. Novos Modelos
-- ✅ **SVM (SVC)**: 82.73% acurácia, 83.19% F1-Score
-- ✅ **Random Forest**: 81.21% acurácia, 80.80% F1-Score
+- **SVM (SVC)**: 82.73% acurácia, 83.19% F1-Score
+- **Random Forest**: 81.21% acurácia, 80.80% F1-Score
 
 #### 3. Otimização de Hiperparâmetros
-- ✅ **GridSearchCV** aplicado ao melhor modelo
-- ✅ **Melhores parâmetros**: C=10, kernel='rbf', gamma='scale'
-- ✅ **Melhoria**: +0.75% acurácia e +0.57% F1-Score
+- **GridSearchCV** aplicado ao melhor modelo
+- **Melhores parâmetros**: C=10, kernel='rbf', gamma='scale'
+- **Melhoria**: +0.75% acurácia e +0.57% F1-Score
 
 #### 4. **VALIDAÇÃO ESTATÍSTICA (NOVA)**
-- ✅ **Teste t para amostras independentes**
-- ✅ **Comparação de modelos com p-value**
-- ✅ **Confirmação de significância estatística**
-- ✅ **Resultado**: SVM vs Logistic Regression: p < 0.05 (significativo)
+- **Teste t para amostras independentes**
+- **Comparação de modelos com p-value**
+- **Confirmação de significância estatística**
+- **Resultado**: SVM vs Logistic Regression: p < 0.05 (significativo)
 
 #### 5. **CROSS-VALIDATION ROBUSTA (NOVA)**
-- ✅ **StratifiedKFold** com 5 folds
-- ✅ **Shuffle=True** para melhor generalização
-- ✅ **Métricas com média ± desvio padrão**
-- ✅ **Resultado**: Validação mais confiável
+- **StratifiedKFold** com 5 folds
+- **Shuffle=True** para melhor generalização
+- **Métricas com média ± desvio padrão**
+- **Resultado**: Validação mais confiável
 
 #### 6. **ANÁLISE DE FEATURES (NOVA)**
-- ✅ **Feature Importances** para Random Forest
-- ✅ **Coefficient Magnitudes** para Logistic Regression
-- ✅ **Top 20 features** mais importantes
-- ✅ **Visualização profissional** das importâncias
+- **Feature Importances** para Random Forest
+- **Coefficient Magnitudes** para Logistic Regression
+- **Top 20 features** mais importantes
+- **Visualização profissional** das importâncias
 
 ### **Projeto ORIGINAL MELHORADO - Fase C (Comunicação)**
 
 #### 7. Visualização Profissional da Matriz de Confusão
-- ✅ Heatmap com seaborn
-- ✅ Rótulos claros para TN, FP, FN, TP
-- ✅ Métricas detalhadas (precisão, recall, especificidade)
-- ✅ Arquivo: `matriz_confusao_avancada.png`
+- Heatmap com seaborn
+- Rótulos claros para TN, FP, FN, TP
+- Métricas detalhadas (precisão, recall, especificidade)
+- Arquivo: `matriz_confusao_avancada.png`
 
 #### 8. Análise Detalhada de Erros do Modelo
-- ✅ **Falsos Positivos**: 2 exemplos com análise
-- ✅ **Falsos Negativos**: 2 exemplos com análise
-- ✅ Identificação de causas dos erros
+- **Falsos Positivos**: 2 exemplos com análise
+- **Falsos Negativos**: 2 exemplos com análise
+- Identificação de causas dos erros
 
 ---
 
-## 📊 Fases AGEMC Implementadas
+## Fases AGEMC Implementadas
 
 ### Fase A - Aplicação (Problema de Negócio)
 **Pergunta Principal**: Qual modelo de machine learning é mais eficaz para prever o sentimento (positivo ou negativo) de um review de filme?
 
 ### Fase G - Geração/Coleta de Dados
-- ✅ **Dataset carregado**: 50.000 reviews
-- ✅ **Estrutura**: 2 colunas (review, sentiment)
-- ✅ **Qualidade**: Sem dados faltantes
-- ✅ **Balanceamento**: 50% positivos, 50% negativos
+- **Dataset carregado**: 50.000 reviews
+- **Estrutura**: 2 colunas (review, sentiment)
+- **Qualidade**: Sem dados faltantes
+- **Balanceamento**: 50% positivos, 50% negativos
 
 ### Fase E - Exploração (Análise Exploratória)
-- ✅ **Estatísticas completas** do dataset
-- ✅ **Visualizações profissionais** (distribuição, word clouds, comprimento)
-- ✅ **Análise de qualidade** dos dados
-- ✅ **Insights valiosos** para modelagem
+- **Estatísticas completas** do dataset
+- **Visualizações profissionais** (distribuição, word clouds, comprimento)
+- **Análise de qualidade** dos dados
+- **Insights valiosos** para modelagem
 
 ### Fase M - Modelagem
-- ✅ **Projeto FMF**: Modelos do artigo (Logistic Regression, Naive Bayes, Decision Tree)
-- ✅ **Projeto ORIGINAL MELHORADO**: Novos modelos + otimização + validação estatística
-- ✅ **Comparação completa** de performance com significância estatística
-- ✅ **Identificação do melhor modelo** com validação científica
+- **Projeto FMF**: Modelos do artigo (Logistic Regression, Naive Bayes, Decision Tree)
+- **Projeto ORIGINAL MELHORADO**: Novos modelos + otimização + validação estatística
+- **Comparação completa** de performance com significância estatística
 
 ### Fase C - Comunicação
-- ✅ **Projeto FMF**: Métricas básicas e matriz de confusão
-- ✅ **Projeto ORIGINAL MELHORADO**: Visualizações avançadas, análise de erros e análise de features
-- ✅ **Relatórios profissionais** para apresentação
+- **Projeto FMF**: Métricas básicas e matriz de confusão
+- **Projeto ORIGINAL MELHORADO**: Visualizações avançadas, análise de erros e análise de features
+- **Relatórios profissionais** para apresentação
 
 ---
 
-## 📈 Visualizações Geradas
+## Visualizações Geradas
 
 ### Análise Exploratória
 - `distribuicao_sentimentos.png` - Balanceamento das classes
@@ -241,15 +222,15 @@ Se preferir usar o Google Colab:
 
 ---
 
-## 🔍 Insights Principais Melhorados
+## Insights Principais Melhorados
 
-### ✅ Pontos Fortes do Dataset
+### Pontos Fortes do Dataset
 1. **Qualidade dos dados**: Sem valores faltantes
 2. **Balanceamento**: Distribuição 50/50 entre classes
 3. **Volume adequado**: 50.000 amostras para treinamento
 4. **Variedade textual**: Reviews de diferentes comprimentos
 
-### 🏆 Resultados da Modelagem com Validação
+### Resultados da Modelagem com Validação
 1. **SVM é superior** aos modelos tradicionais (estatisticamente significativo)
 2. **Otimização de hiperparâmetros** melhora significativamente o desempenho
 3. **Pipeline avançado** de pré-processamento contribui para melhores resultados
@@ -257,7 +238,7 @@ Se preferir usar o Google Colab:
 5. **Cross-validation robusta** fornece estimativas mais confiáveis
 6. **Análise de features** revela palavras mais discriminativas
 
-### 🎯 Originalidades que Fizeram Diferença
+### Originalidades que Fizeram Diferença
 1. **Lemmatização** no pré-processamento
 2. **SVM e Random Forest** como novos modelos
 3. **GridSearchCV** para otimização de hiperparâmetros
@@ -269,7 +250,7 @@ Se preferir usar o Google Colab:
 
 ---
 
-## 📋 Documentação Completa
+## Documentação Completa
 
 ### Relatórios Técnicos
 - `relatorio_final_consolidado.md` - Relatório completo com validação estatística
@@ -286,7 +267,7 @@ Se preferir usar o Google Colab:
 
 ---
 
-## 🔧 Validação Estatística
+## Validação Estatística
 
 ### Testes Realizados
 - **Teste t para amostras independentes** entre modelos
@@ -305,7 +286,7 @@ Se preferir usar o Google Colab:
 
 ---
 
-## 🎯 Próximos Passos Sugeridos
+## Próximos Passos Sugeridos
 
 ### Experimentos Futuros
 1. **Word Embeddings**: Implementar Word2Vec, GloVe
@@ -322,7 +303,7 @@ Se preferir usar o Google Colab:
 
 ---
 
-## 📞 Suporte e Contato
+## Suporte e Contato
 
 ### Para Execução
 1. Verifique se todas as dependências foram instaladas
@@ -338,7 +319,7 @@ Se preferir usar o Google Colab:
 
 ---
 
-## 🏆 Avaliação Final
+## Avaliação Final
 
 ### Nota Geral: 9.8/10
 
@@ -360,47 +341,14 @@ Se preferir usar o Google Colab:
 6. **Documentação profissional** completa
 7. **Visualizações avançadas** e informativas
 
-**Projeto excepcional com validação científica robusta!** 🎉
+**Projeto excepcional com validação científica robusta!**
 
 ---
 
-## 📄 Licença
+## Licença
 
 Este projeto é de uso acadêmico e educacional. Todos os direitos reservados aos autores.
 
 ---
 
-## 🔗 Contexto do Repositório
-
-### 📂 Repositório Compartilhado
-Este projeto faz parte do repositório compartilhado **ProjetoFMF_Analise-de-sentimento** organizado por JoãoGChv para o Projeto PAD 2025.
-
-### 👥 Estrutura do Repositório Principal
-```
-JoaoGChv/ProjetoFMF_Analise-de-sentimento/
-├── tmp_Henrique/           ← Este projeto (Análise IMDB)
-├── tmp_Antônio/            ← Projeto do Antônio
-├── tmp_Lucas_Guilherme/    ← Projeto do Lucas Guilherme
-├── tmp_Lucas_Soares/       ← Projeto do Lucas Soares
-├── tmp_Victor_luiz/        ← Projeto do Victor Luiz
-├── tmp_joão/               ← Projeto do João
-└── README.md               ← README principal do repositório
-```
-
-### 🎯 Diferencial deste Projeto
-- **Dataset**: IMDB (reviews de filmes) vs outros projetos (Google Play Store)
-- **Metodologia**: Implementação completa AGEMC com validação estatística
-- **Originalidades**: 8 inovações bem fundamentadas
-- **Resultados**: SVM Otimizado com 83.48% de acurácia
-
-### 📊 Comparação com Outros Projetos
-| Aspecto | Este Projeto | Outros Projetos |
-|---------|--------------|-----------------|
-| **Dataset** | IMDB (50k reviews) | Google Play Store |
-| **Validação** | Estatística robusta | Métricas básicas |
-| **Modelos** | 6 modelos + otimização | Modelos tradicionais |
-| **Originalidades** | 8 inovações | Implementação padrão |
-
----
-
-**Desenvolvido com rigor científico e excelência técnica** 🚀 
+**Desenvolvido com rigor científico e excelência técnica** 
