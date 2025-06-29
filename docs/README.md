@@ -11,12 +11,15 @@ O projeto foi desenvolvido em duas versões:
 ### 🎯 Objetivo
 Identificar qual modelo de machine learning é mais eficaz para prever o sentimento (positivo ou negativo) de um review de filme, comparando abordagens tradicionais com inovações em modelagem e comunicação, com validação científica robusta.
 
+### 👨‍💻 Autor
+**Henrique** - Projeto PAD 2025 - Análise de Sentimentos IMDB
+
 ---
 
 ## 📁 Estrutura do Projeto Organizada
 
 ```
-projeto PAD github/
+tmp_Henrique/                    # Esta pasta no repositório compartilhado
 ├── 📊 data/                          # Dados
 │   └── IMDB Dataset.csv              # Dataset principal (50.000 reviews)
 ├── 🐍 src/                           # Código fonte
@@ -66,8 +69,17 @@ Para testes rápidos, você pode usar apenas uma amostra do dataset:
 df = df.sample(n=5000, random_state=42)  # Usar apenas 5000 reviews
 ```
 
+### 🔧 Pré-requisitos
+- Python 3.7+
+- pip (gerenciador de pacotes Python)
+- Git (para clonar o repositório)
+
 ### 1. Instalação das Dependências
 ```bash
+# Navegue para a pasta do projeto
+cd tmp_Henrique
+
+# Instale as dependências
 pip install -r requirements.txt
 ```
 
@@ -103,6 +115,12 @@ python src/comunicacao_avancada_imdb.py
 ### 4. Jupyter Notebook
 - Abra o arquivo `notebooks/Projeto_Pad_Original_vs_FMF.ipynb`
 - Execute as células sequencialmente
+
+### 5. Google Colab (Alternativa)
+Se preferir usar o Google Colab:
+1. Faça upload do notebook para o Colab
+2. Faça upload do dataset para o Colab
+3. Execute as células sequencialmente
 
 ---
 
@@ -349,6 +367,39 @@ python src/comunicacao_avancada_imdb.py
 ## 📄 Licença
 
 Este projeto é de uso acadêmico e educacional. Todos os direitos reservados aos autores.
+
+---
+
+## 🔗 Contexto do Repositório
+
+### 📂 Repositório Compartilhado
+Este projeto faz parte do repositório compartilhado **ProjetoFMF_Analise-de-sentimento** organizado por JoãoGChv para o Projeto PAD 2025.
+
+### 👥 Estrutura do Repositório Principal
+```
+JoaoGChv/ProjetoFMF_Analise-de-sentimento/
+├── tmp_Henrique/           ← Este projeto (Análise IMDB)
+├── tmp_Antônio/            ← Projeto do Antônio
+├── tmp_Lucas_Guilherme/    ← Projeto do Lucas Guilherme
+├── tmp_Lucas_Soares/       ← Projeto do Lucas Soares
+├── tmp_Victor_luiz/        ← Projeto do Victor Luiz
+├── tmp_joão/               ← Projeto do João
+└── README.md               ← README principal do repositório
+```
+
+### 🎯 Diferencial deste Projeto
+- **Dataset**: IMDB (reviews de filmes) vs outros projetos (Google Play Store)
+- **Metodologia**: Implementação completa AGEMC com validação estatística
+- **Originalidades**: 8 inovações bem fundamentadas
+- **Resultados**: SVM Otimizado com 83.48% de acurácia
+
+### 📊 Comparação com Outros Projetos
+| Aspecto | Este Projeto | Outros Projetos |
+|---------|--------------|-----------------|
+| **Dataset** | IMDB (50k reviews) | Google Play Store |
+| **Validação** | Estatística robusta | Métricas básicas |
+| **Modelos** | 6 modelos + otimização | Modelos tradicionais |
+| **Originalidades** | 8 inovações | Implementação padrão |
 
 ---
 
