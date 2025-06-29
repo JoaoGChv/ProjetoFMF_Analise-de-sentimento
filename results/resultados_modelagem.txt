@@ -1,0 +1,17 @@
+RELATÓRIO DE MODELAGEM - PROJETO FMF
+==================================================
+
+COMPARAÇÃO DOS MODELOS:
+------------------------------
+Logistic Regression: Acurácia=0.8318, F1=0.8316
+Naive Bayes: Acurácia=0.8152, F1=0.8070
+SVM: Acurácia=0.8242, F1=0.8274
+Decision Tree: Acurácia=0.7045, F1=0.6939
+
+MELHOR MODELO: Logistic Regression
+Acurácia: 0.8318
+F1-Score: 0.8316
+
+MODELO OTIMIZADO:
+Acurácia: 0.7833
+F1-Score: 0.7797
