@@ -1,39 +1,20 @@
-# 🎬 Projeto PAD - Análise de Sentimentos IMDB
+# Projeto-FMF-ML-p-an-lise-de-sentimento
+Repositório para guardar o Projeto de PAD 2025
 
-## 📋 Sobre
+# Visão Geral do Projeto
 
-Este é o projeto de **Henrique** para o Projeto PAD 2025, implementando análise de sentimentos em reviews de filmes do dataset IMDB.
+Este projeto tem como objetivo principal aplicar técnicas de Análise de Sentimento para extrair insights valiosos das avaliações de usuários de aplicativos populares da Google Play Store. Nosso foco está em uma categoria específica de aplicativos para aprofundar a compreensão da percepção do mercado.
 
-## 🚀 Execução Rápida
+## Pergunta Chave do Projeto
 
-```bash
-# Instalar dependências
-pip install -r requirements.txt
+"Com base na análise de sentimento das avaliações de aplicativos da Google Play Store *dentro de uma categoria específica (ex: 'Redes Sociais e Comunicação'), quais são os **tópicos ou aspectos específicos* (ex: "desempenho", "interface", "privacidade", "bugs") que geram maior satisfação ou insatisfação dos usuários, e como o sentimento em relação a esses *aspectos individuais impacta a percepção geral e as oportunidades de melhoria dos aplicativos *dentro dessa categoria?*"
 
-# Executar projeto completo
-python src/execucao_completa.py
-```
 
-## 📁 Estrutura
+## Dataset Utilizado
 
-- `src/` - Código fonte Python
-- `docs/` - Documentação completa
-- `data/` - Dataset IMDB
-- `notebooks/` - Jupyter notebooks
-- `visualizations/` - Gráficos e visualizações
-- `results/` - Resultados das análises
-
-## 📖 Documentação Completa
-
-Para documentação detalhada, acesse: [`docs/README.md`](docs/README.md)
-
-## 🏆 Resultados Principais
-
-- **Melhor modelo**: SVM Otimizado (83.48% acurácia)
-- **8 originalidades** implementadas
-- **Validação estatística** robusta
-- **Metodologia AGEMC** completa
-
----
-
-**Autor**: Henrique | **Projeto PAD 2025** 
+* *Nome:* "10000 latest reviews from the Top 20 apps on the Google Play Store"
+* *Origem:* Compilado a partir de avaliações de aplicativos da Google Play Store.
+* *Formato:* reviews.csv
+* *Colunas Relevantes:* content (texto da avaliação) e score (pontuação numérica da avaliação).
+* *Foco Inicial:* Aplicativos dentro da categoria "Redes Sociais e Comunicação" presentes neste dataset.
+* *Fonte: Kagle:* https://www.kaggle.com/datasets/odins0n/top-20-play-store-app-reviews-daily-update?select=all_combined.csv
